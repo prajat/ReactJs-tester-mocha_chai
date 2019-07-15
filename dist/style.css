@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to left, #051937, #004269, #006f8d, #009e97, #12cb88); }
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 10px; }
+
+.header {
+  text-align: center;
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  top: 0;
+  background-color: #335f7c;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  box-shadow: 0rem 1rem 1rem #1d1c1c; }
+  .header__heading {
+    font: bold 3rem monospace; }
+
+.section {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.todos {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 0; }
+  .todos__todo-item {
+    background-color: #4da4df;
+    transition: background-color 0.7s;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 1%;
+    cursor: pointer;
+    text-align: center;
+    padding: 1%;
+    -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 100% 100%, 0% 100%, 5% 50%);
+            clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 100% 100%, 0% 100%, 5% 50%); }
+    .todos__todo-item__text {
+      font: 2rem monospace;
+      font-weight: 600;
+      width: 70%;
+      height: 100%;
+      overflow: auto;
+      scrollbar-width: thin; }
+    .todos__todo-item:after {
+      content: "Hello";
+      font-size: 2rem;
+      visibility: hidden;
+      width: 0; }
+
+.todo-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+  align-items: center;
+  background-color: #6bc8d4;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 0.5rem; }
+  .todo-form__label {
+    font-size: 2.2rem;
+    font-family: monospace;
+    color: white;
+    width: 30%; }
+  .todo-form__textbox {
+    width: 60%;
+    height: 3rem;
+    font-size: 2rem;
+    border: 1px solid cadetblue;
+    outline-color: #96f300;
+    outline-width: 1rem;
+    font-family: monospace;
+    padding: 1%;
+    border-radius: 0.5rem; }
+
+.todos__todo-item:hover {
+  background-color: #e96161; }
+  .todos__todo-item:hover:after {
+    visibility: visible;
+    content: "Done?";
+    margin-bottom: 1%;
+    font-family: monospace;
+    font-weight: 600; }
+

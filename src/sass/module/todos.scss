@@ -1,0 +1,41 @@
+.todos{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    padding:0;
+    
+    &__todo-item{
+        background-color: $secondaryColor;
+        transition: background-color 0.7s;
+        height:3rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        width:50%;
+        margin-bottom: 1%;
+        cursor: pointer;
+        text-align: center;
+        padding:1%;
+        clip-path: polygon(0% 0%,95% 0%,100% 50%,95% 100%,100% 100%,0% 100%,5% 50%);
+        &__text{
+            font:2rem $primaryFont;
+            font-weight:600;
+            width:70%;
+            height:100%;
+            overflow:auto;
+            scrollbar-width: thin;
+        }
+        &:after{
+            content: "Hello";
+            font-size:2rem;
+            visibility: hidden;
+            width:0;
+        }
+    }
+    
+}

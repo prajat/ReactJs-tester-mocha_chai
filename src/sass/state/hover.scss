@@ -1,0 +1,11 @@
+.todos__todo-item:hover{
+    background-color: rgb(233, 97, 97);
+    &:after{
+        visibility: visible;
+        //width:auto;
+        content:"Done?";
+        margin-bottom: 1%;
+        font-family: monospace;
+        font-weight: 600;
+    }
+}

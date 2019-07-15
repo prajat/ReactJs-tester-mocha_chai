@@ -1,0 +1,17 @@
+.header{
+    text-align:center;
+    width:100%;
+    height:7rem;
+    position:fixed;
+    top:0;
+    background-color: $primaryColor;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 0rem 1rem 1rem rgb(29, 28, 28);
+    &__heading{
+        font:bold 3rem $primaryFont;
+    }
+}

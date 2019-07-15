@@ -1,0 +1,28 @@
+.todo-form{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+    align-items: center;
+    background-color: $tertiaryColor;
+    width:30%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    &__label{
+        font-size:2.2rem;
+        font-family: $primaryFont;
+        color:white;
+        width:30%;
+    }
+    &__textbox{
+        width:60%;
+        height:3rem;
+        font-size:2rem;
+        border:1px solid cadetblue;
+        outline-color: $outlineColor;
+        outline-width: 1rem;
+        font-family: $primaryFont;
+        padding:1%;
+        border-radius: 0.5rem;
+    }
+}
